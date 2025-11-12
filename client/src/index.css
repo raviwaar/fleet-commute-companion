@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* your own overrides if needed */
+body {
+    background-color: theme('colors.gray.50');
+    color: theme('colors.gray.900');
+}
