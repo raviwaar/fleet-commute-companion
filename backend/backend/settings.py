@@ -126,9 +126,6 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-# --- CORS Headers Configuration (Crucial for API Development) ---
-# Allows requests from the listed origins (e.g., your frontend running on localhost:3000)
-# IMPORTANT: In production, NEVER use CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all origins in DEBUG mode for development ease
 
 if not DEBUG:
@@ -143,4 +140,3 @@ if not DEBUG:
 
 # Allow sending cookies with requests
 CORS_ALLOW_CREDENTIALS = True
-SECRET_KEY='bdabcioq22332dnjwdw'
